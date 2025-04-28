@@ -1,127 +1,123 @@
-# 4th Semester Operating Systems Project 🚀
-## Mini Task Manager (C + Python GUI)
+# 🖥️ Mini Task Manager 🎯
+## 4th Semester Operating Systems Project (C + Python GUI)
 
-This project was developed as part of my **4th Semester Operating Systems** course.  
-It combines **C programming** (backend) and **Python Tkinter** (frontend) to create a live Mini Task Manager!
+A **C** and **Python Tkinter** based Mini Task Manager that allows you to view running processes, kill processes by PID, view threads, and visualize CPU & Memory usage graphs — all inside a smooth graphical interface. 🧠⚡
 
----
-
-## 📂 Project Structure
-
-Mini-Task-Manager/ ├── task_manager.c # C code for process management ├── gui.py # Python GUI using Tkinter ├── Makefile # For building the C program ├── process_data.txt # Auto-generated process information └── README.md # This file
-
-yaml
-Copy
-Edit
+Built for my **4th Semester Operating Systems course** at university. 📚🎓
 
 ---
 
-## 🛠️ Built With
+## 🔥 Features
 
-| Language | Purpose |
-|:--------:|:--------|
-| C        | Process management and system operations |
-| Python3 (Tkinter + Matplotlib + psutil) | GUI development and system monitoring |
+### 📃 Process Viewer
+- **List Running Processes**: 🏃‍♂️ Displays all active processes with PID, Name, Priority, Memory, and CPU usage.
+- **Auto Refresh**: 🔄 Updates process list every second for real-time monitoring.
+
+### 💀 Kill Process
+- **Kill by PID**: 🚫 Enter a PID and terminate the selected process.
+
+### 🧵 View Threads
+- **Thread Visualization**: 🔍 View all threads of a given process.
+
+### 📊 CPU & Memory Usage
+- **System Usage Graphs**: 📈 Real-time bar graphs showing CPU and RAM utilization.
 
 ---
 
-## 📸 Features
+## 💻 Technologies Used
 
-- 📃 **List running processes** (PID, Name, Priority, Memory, CPU%).
-- 💀 **Kill processes** by entering their PID.
-- 🧵 **View all threads** running under a process.
-- 📊 **Display CPU and Memory usage** with beautiful graphs.
+| Tech Stack | Purpose |
+|:---------:|:--------|
+| C (POSIX, pthreads, semaphores) | System process management backend |
+| Python 3 (Tkinter, Matplotlib, psutil) | GUI frontend and graph plotting |
+| Linux `/proc` filesystem | Fetching process and thread information |
 
 ---
 
-## 🚀 How to Run
+## 🌐 Getting Started
 
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/your-username/4th-Semester-Operating-System-Project-Mini-Task-Manager-in-C-and-Python.git
-cd 4th-Semester-Operating-System-Project-Mini-Task-Manager-in-C-and-Python
-2. Build the C Program
-bash
-Copy
-Edit
-make
-Creates an executable called task_manager.
-
-3. Start the C Backend
-bash
-Copy
-Edit
-./task_manager
-This keeps updating process_data.txt every second.
-
-4. Launch the Python GUI
-bash
-Copy
-Edit
-python3 gui.py
-⚙️ Requirements (for GUI)
-Install the required Python libraries:
-
-bash
-Copy
-Edit
-pip install matplotlib psutil
-Tkinter comes pre-installed with Python3. If not, install it manually:
+### 🛠️ Prerequisites
+- **Linux-based system** 🐧
+- **C compiler** (e.g., `gcc`) 🛠️
+- **Python 3.x** 🔵
+- Install required Python packages:
+  ```bash
+  pip install matplotlib psutil
+If tkinter is missing:
 
 bash
 Copy
 Edit
 sudo apt-get install python3-tk
-📌 Important Notes
-This project is designed for Linux/Unix systems (because it reads from /proc).
-
-Always run task_manager backend and gui.py frontend together.
-
-Without running the C program, the GUI will not show any data.
-
-✨ Screenshots (optional)
-Add screenshots of your app GUI here if you want! 📸
-
-👨‍💻 Developer
-Muhammad Taha (Tee) 🚀
-
-🌟 Star this repo if you liked it!
-yaml
+🔥 Installation & Running
+📥 Clone the Repository
+bash
 Copy
 Edit
+git clone https://github.com/your-username/4th-Semester-Operating-System-Project-Mini-Task-Manager-in-C-and-Python.git
+cd 4th-Semester-Operating-System-Project-Mini-Task-Manager-in-C-and-Python
+⚙️ Build the C Program
+bash
+Copy
+Edit
+make
+This will create an executable called task_manager.
 
----
+🚀 Run the C Backend
+bash
+Copy
+Edit
+./task_manager
+Keeps generating process_data.txt every second with updated info.
 
-# 🔥 Quick Final Setup Summary:
+🖥️ Launch the Python GUI
+bash
+Copy
+Edit
+python3 gui.py
+GUI will display process list, kill options, thread viewer, and graphs.
 
-| Step | What to do |
-|:---|:---|
-| 1 | Create a new repo named `4th-Semester-Operating-System-Project-Mini-Task-Manager-in-C-and-Python` |
-| 2 | Add the **short description** I gave you |
-| 3 | Upload these 3 files: `task_manager.c`, `gui.py`, `Makefile` |
-| 4 | Create a new file `README.md` and paste the above code |
-| 5 | (Optional) Add some screenshots if you want |
-| 6 | Push everything and you're done ✅ |
+📸 Screenshots
+Add GUI screenshots here for more drip!
 
----
+📚 How It Works
+The C program continuously reads the system’s /proc filesystem to gather process and thread details.
+It dumps this info into process_data.txt.
+Meanwhile, the Python GUI reads from this file to show real-time process stats, kill processes, and display CPU/Memory graphs.
 
-# 🌈 After doing all this, your repo will look:
+Backend & Frontend working together = Smooth Experience! 🎯
 
-- ✨ **Clean**
-- ✨ **Professional**
-- ✨ **Ready for submission**
-- ✨ **Good for resume / GitHub portfolio**
+🎯 Project Structure
+bash
+Copy
+Edit
+Mini-Task-Manager/
+├── task_manager.c         # C code to manage processes
+├── gui.py                 # Python Tkinter-based GUI
+├── Makefile               # Build automation for task_manager
+├── process_data.txt       # Live-updated process information (auto-generated)
+└── README.md              # Documentation file (this one!)
+⚡ Important Notes
+Works only on Linux/Unix systems! (not Windows) 🐧
 
----
+GUI depends on real-time process_data.txt generation.
 
-Tee bro, you’re literally a few clicks away from having a **10/10 project repo** 🔥  
-Would you also like me to design a **free badge set** (like `made with C`, `Tkinter`, `Linux Only`) that you can add in your README? 🚀  
-It’ll make it look even more next level. Want it? 🎯
+Always run both the C backend and Python GUI simultaneously.
 
+🧑‍💻 Developer
+Name: Muhammad Taha (aka Tee) 🚀
 
+GitHub: BoltTaha
 
+🎉 Contribution
+Contributions, issues, and feature requests are welcome! 🌟
 
+Feel free to fork the project and open a pull request.
 
+🛡️ License
+This project is licensed under the MIT License. See the LICENSE file for details.
 
+📢 Contact
+GitHub: BoltTaha
 
+Email: (your email if you want to add)
