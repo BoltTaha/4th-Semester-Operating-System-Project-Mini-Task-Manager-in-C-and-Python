@@ -80,9 +80,9 @@ python3 gui.py
 
 ---
 
-## 📸 Screenshots
+## 📸 Demo
 
-> *Add GUI screenshots here for more drip!*
+> *Demo Video: Watch the project demo here! 🎬*
 
 ---
 
