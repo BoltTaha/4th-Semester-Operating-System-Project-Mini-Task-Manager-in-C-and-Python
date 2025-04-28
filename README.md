@@ -119,7 +119,7 @@ Mini-Task-Manager/
 
 ## 🧑‍💻 Developer
 
-- **Name**: Muhammad Taha (aka Tee) 🚀
+- **Name**: Muhammad Taha (aka Tee) 🚀 && Abdul Rafy
 - **GitHub**: [BoltTaha](https://github.com/BoltTaha)
 
 ---
@@ -141,7 +141,7 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 ## 📢 Contact
 
 - **GitHub**: [BoltTaha](https://github.com/BoltTaha)
-- **Email**: *(your email if you want to add)*
+
 
 ---
 
